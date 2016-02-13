@@ -1,14 +1,13 @@
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
-    <a class="active item">About</a>
+    <a class="item">About</a>
     <a class="item">Portfolio</a>
-    <a class="item">Blog</a>
     <a class="item">Connect</a>
     <div class="right item">
-        <a href="www.com"><i class="large github link icon"></i></a>
-        <a href="www.com"><i class="large linkedin link icon"></i></a>
-        <a href="www.com"><i class="large instagram link icon"></i></a>
+      <a href="https://github.com/matt-stj"><i class="large github link icon"></i></a>
+      <a href="https://www.linkedin.com/in/mattstjernholm"><i class="large linkedin link icon"></i></a>
+      <a href="mailto:matthew.stjernholm@gmail.com"><i class="large mail outline link icon"></i></a>
     </div>
   </div>
 </div>
@@ -17,7 +16,6 @@
 <div class="ui vertical inverted sidebar menu">
   <a class="item">About</a>
   <a class="item">Portfolio</a>
-  <a class="item">Blog</a>
   <a class="item">Connect</a>
 </div>
 
@@ -31,14 +29,13 @@
         <a class="toc item">
           <i class="sidebar icon"></i>
         </a>
-        <a class="active item">About</a>
+        <a class="item">About</a>
         <a class="item">Portfolio</a>
-        <a class="item">Blog</a>
         <a class="item">Connect</a>
         <div class="right item">
-            <a href="www.com"><i class="large github link icon"></i></a>
-            <a href="www.com"><i class="large linkedin link icon"></i></a>
-            <a href="www.com"><i class="large instagram link icon"></i></a>
+          <a href="https://github.com/matt-stj"><i class="large github link icon"></i></a>
+          <a href="https://www.linkedin.com/in/mattstjernholm"><i class="large linkedin link icon"></i></a>
+          <a href="mailto:matthew.stjernholm@gmail.com"><i class="large mail outline link icon"></i></a>
         </div>
       </div>
     </div>
@@ -47,7 +44,7 @@
       <h1 class="ui inverted header">
         Matt Stjernholm
       </h1>
-      <h2>-- Web Developer -- </h2>
+      <h2>Ruby + JavaScript Developer </h2>
     </div>
 
   </div>
@@ -55,23 +52,139 @@
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
-        <div class="eight wide column">
-          <h3 class="ui header">We Help Companies and Companions</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">We Make Bananas That Can Dance</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+        <div class="eleven wide column">
+          <h2 class"ui huge header">About</h2>
+          <h3 class"ui header">Tech Geek + Adventurer</h3>
+          <p>
+            I spent the years after I graduated college searching for work that I found meaningful. It was a journey that involved all sorts of jobs and projects — from teaching English overseas and guiding outdoor education programs
+            — to helping Fortune 500 companies build sustainability initiatives. I came to love coding after working on a product team for an early-stage startup, and dedicated myself to spending <strong>2,000 hours of learning from the best teachers and mentors in web development</strong>. Today, I'm ready to contribute to a fast-paced tech team.
+          </p>
         </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
-        </div>
-      </div>
-      <div class="row">
-        <div class="center aligned column">
-          <a class="ui huge button">Check Them Out</a>
+        <div class="four wide right floated column aligned center">
+          <%= image_tag("matt-500x500.png", class: "ui aligned centered circular image push-down") %>
+          <p class="ui center aligned small-text">
+            When I'm not writing code, you'll find me travelling, adventuring outdoors, or searching for good food.
+          </p>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="ui vertical stripe segment secondary-bg small-stripe">
+    <div class="ui middle aligned stackable grid fluid container">
+      <div class="row">
+        <div class="four wide left floated gray column">
+          <%= image_tag("html.png", class: "ui aligned centered circular image push-down") %>
+        </div>
+        <div class="eleven wide left floated column right-align">
+          <h2 class"ui right-align header">Portfolio</h2>
+          <h3 class"ui header right-align">Ruby on Rails + Javascript</h3>
+          <p>
+            The Ruby on Rails apps below consist of projects that I've completed as courswork or personal side projects during my time at the <span><a href-"turing.io">Turing School for Software and Design.</a></span>
+            They were all built with Test Driven Development, Object Oriented Programming, and best practices for building elegant MVC applications (RESTful routes, logic pushed down the stack, and DRY code)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui vertical stripe segment">
+      <div class="ui container">
+        <div class="ui equal width stackable internally celled grid">
+          <div class="center aligned centered row">
+            <div class="centered column">
+              <div class="ui cards">
+                <div class="ui card">
+                  <div class="image">
+                    <%= image_tag("snow-alert.png") %>
+                  </div>
+                  <div class="content">
+                    <div class="header">Snow Alert</div>
+                    <div class="meta">
+                      <span class="right floated">
+                        <a href="https://github.com/matt-stj/snow_alert" ><i class="github icon large link"></i></a>
+                      </span>
+                      <span>
+                        <a href="http://snow-a1ert.herokuapp.com" ><i class="world icon large link"></i>Live App</a>
+                      </span>
+                    </div>
+                    <div class="description">
+                      Snow Alert is an app that lets you track when snowfall is coming to your favorite mountains. Create a profile with FaceBook's OAuth, add your favorite mountains to your profile, and receive daily email alerts with forecasts for your resorts.
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <span>
+                      <i class="circular inverted  grey tiny code icon"></i>
+                      Ruby on Rails + Javascript + Sendgrid
+                    </span>
+                  </div>
+                </div>
+
+                <div class="ui card">
+                  <div class="image">
+                    <%= image_tag("rails-engine.png") %>
+                  </div>
+                  <div class="content">
+                    <div class="header">Rails Engine</div>
+                    <div class="meta">
+                      <span class="right floated">
+                        <a href="https://github.com/matt-stj/snow_alert" ><i class="github icon large link"></i></a>
+                      </span>
+                      <span>
+                        <a href="https://rails-engine-demo.herokuapp.com/" ><i class="world icon large link"></i>Live App</a>
+                      </span>
+                    </div>
+                    <div class="description">
+                      Use Rails and ActiveRecord to build a JSON API with endpoints that display business intelligence data from an online merchant database.<br><br>
+                      25+ RESTful API endpoints and Single-Responsibility controllers.
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <span>
+                      <i class="circular inverted  grey tiny code icon"></i>
+                      ActiveRecord + JSON API + AJAX
+                    </span>
+                  </div>
+                </div>
+
+
+                <div class="ui card">
+                  <div class="ui card">
+                    <div class="image">
+                      <%= image_tag("twitter-curious.png") %>
+                    </div>
+                    <div class="content">
+                      <div class="header">Twitter Clone</div>
+                      <div class="meta">
+                        <span class="right floated">
+                          <a href="https://github.com/matt-stj/api-twitter-curious" ><i class="github icon large link"></i></a>
+                        </span>
+                        <span>
+                          <a href="http://twitter-curious.herokuapp.com/" ><i class="world icon large link"></i>Live App</a>
+                        </span>
+                      </div>
+                    <div class="description">
+                      Interact with your Twitter account through this look-alike app.
+                      With Twitter's OAuth and access to their API, you can view your feed, create new tweets, follow/unfollow users, and favorite tweets.
+                      This was my first exploration into OAuth and working with API data.
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <span>
+                      <i class="circular inverted  grey tiny code icon"></i>
+                      RoR + OAuth + VCR Testing
+                    </span>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 
 
   <div class="ui vertical stripe quote segment">

@@ -16,6 +16,30 @@
 
  @import "semantic-ui";
 
+    .secondary-bg {
+      background-color: #F8F8F8 !important;
+    }
+
+    .small-stripe {
+        padding: 2em 0em;
+    }
+
+    .ui.cards > .card > .image > img, .ui.card > .image > img {
+      height: 160px !important;
+    }
+
+    .right-align {
+      text-align: right !important;
+    }
+
+    .push-down {
+      margin-top: 85px;
+    }
+    .small-text {
+      font-size: 0.9em !important;
+      text-align: center;
+      padding-top: 5px;
+    }
 
     .hidden.menu {
       display: none;
