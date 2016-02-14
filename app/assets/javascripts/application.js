@@ -17,25 +17,75 @@
 
 
 $(document)
-    .ready(function() {
+.ready(function() {
+  //hide drop ins
+  $('.animated .icon').hide()
 
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
+  //shapes
+  $('.shape').shape();
+  $('.shape').shape('flip over')
 
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
+  var i = 1;
+  function myLoop () {
+    setTimeout(function () {
+      $('.shape').shape('flip over')
+      i++;
+      if (i < 100) {
+        myLoop();
+      }
+    }, 2000)
+  }
+  myLoop();
 
-    })
+
+  // fix menu when passed
+  $('.masthead')
+  .visibility({
+    once: false,
+    onBottomPassed: function() {
+      $('.fixed.menu').transition('fade in');
+    },
+    onBottomPassedReverse: function() {
+      $('.fixed.menu').transition('fade out');
+    }
+  })
   ;
+
+  // create sidebar and attach to menu open
+  $('.ui.sidebar')
+  .sidebar('attach events', '.toc.item');
+
+  // hide socials
+  // drop in socials
+  $('.animated .icon')
+  .transition({
+    animation : 'drop',
+    duration  : 2000,
+    reverse: 'false',
+    interval  : 100
+  })
+  ;
+
+  // social icon bounce
+  $('.social-logo').on('mouseover', function() {
+    $(this).transition('bounce')
+  });
+
+
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+
+})
+;

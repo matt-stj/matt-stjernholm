@@ -16,6 +16,27 @@
 
  @import "semantic-ui";
 
+    .top-margin {
+      margin-top: 50px;
+    }
+
+    .social-logo {
+      height: 100px !important;
+      display: block;
+    }
+
+    .ui.inverted.segment {
+      background-image: image-url("bg1.png");
+    }
+
+    .white-text {
+      color: white;
+    }
+
+    .white-text:hover {
+      color: #F6F6F6;
+    }
+
     .secondary-bg {
       background-color: #F8F8F8 !important;
     }
