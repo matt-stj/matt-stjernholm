@@ -28,6 +28,19 @@ $(document)
   ($(this).closest('.column').find('.shape')).shape('flip up')
   });
 
+  //shape button
+  var i = 1;
+ function myLoop () {
+   setTimeout(function () {
+     $('.flip-button').transition('bounce')
+     i++;
+     if (i < 5) {
+       myLoop();
+     }
+   }, 5000)
+ }
+ myLoop();
+
 
   // fix menu when passed
   $('.masthead')
