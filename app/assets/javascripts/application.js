@@ -23,7 +23,7 @@ $(document)
 
   //shapes
   $('.shape').shape();
-  $('.shape').shape('repaint');
+  $('.shape').shape('flip over');
 
   $('.flip-button').on('click', function() {
   ($(this).closest('.column').find('.shape')).shape('flip up')
