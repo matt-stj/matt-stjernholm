@@ -22,20 +22,11 @@ $(document)
   $('.animated .icon').hide()
 
   //shapes
-  $('.shape').shape();
-  $('.shape').shape('flip over')
+  $('.shape').shape('flip over');
 
-  var i = 1;
-  function myLoop () {
-    setTimeout(function () {
-      $('.shape').shape('flip over')
-      i++;
-      if (i < 100) {
-        myLoop();
-      }
-    }, 2000)
-  }
-  myLoop();
+  $('.flip-button').on('click', function() {
+  ($(this).closest('.column').find('.shape')).shape('flip up')
+  });
 
 
   // fix menu when passed
