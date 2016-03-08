@@ -22,7 +22,8 @@ $(document)
   $('.animated .icon').hide()
 
   //shapes
-  $('.shape').shape('flip over');
+  $('.shape').shape();
+  $('.shape').shape('repaint');
 
   $('.flip-button').on('click', function() {
   ($(this).closest('.column').find('.shape')).shape('flip up')
