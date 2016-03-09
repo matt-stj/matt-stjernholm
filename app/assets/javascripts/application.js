@@ -36,6 +36,13 @@ $(document)
     once: false,
     onBottomPassed: function() {
       $('.fixed.menu').transition('fade in');
+      $('.fixed-animated .icon').show()
+      .transition({
+        animation : 'jiggle',
+        duration  : 1000,
+        reverse: 'true',
+        interval  : 250
+      });
     },
     onBottomPassedReverse: function() {
       $('.fixed.menu').transition('fade out');
@@ -52,11 +59,15 @@ $(document)
   $('.animated .icon')
   .transition({
     animation : 'drop',
-    duration  : 2000,
+    duration  : 3000,
     reverse: 'false',
-    interval  : 100
-  })
-  ;
+    interval  : 150
+  }).transition({
+        animation : 'jiggle',
+        duration  : 1000,
+        reverse: 'true',
+        interval  : 250
+      });
 
   // social icon bounce
   $('.social-logo').on('mouseover', function() {
