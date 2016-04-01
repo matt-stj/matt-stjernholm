@@ -1,23 +1,27 @@
-development:
-  adapter: postgresql
-  encoding: utf8
-  database: project_development
-  pool: 5
-  username:
-  password:
+default: &default
 
-test: &TEST
   adapter: postgresql
-  encoding: utf8
-  database: project_test
+  encoding: unicode
   pool: 5
-  username:
-  password:
+
+  host: localhost
+  username: mattstjernholm
+  password: <%= ENV['MATTSTJERNHOLM_DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: mattstjernholm_development
+  username: mattstjernholm
+  password: <%= ENV['MATTSTJERNHOLM_DATABASE_PASSWORD'] %>
+
+test:
+  <<: *default
+  database: mattstjernholm_test
+  username: mattstjernholm
+  password: <%= ENV['MATTSTJERNHOLM_DATABASE_PASSWORD'] %>
 
 production:
-  adapter: postgresql
-  encoding: utf8
-  database: project_production
-  pool: 5
-  username:
-  password:
+  <<: *default
+  database: mattstjernholm_production
+  username: mattstjernholm
+  password: <%= ENV['MATTSTJERNHOLM_DATABASE_PASSWORD'] %>
