@@ -26,7 +26,14 @@ $(document)
 
   ga('create', 'UA-75658047-1', 'auto');
   ga('send', 'pageview');
+  $('.flip-button').on('click', function(){
+    ga('send', 'event', 'portfolio-buttons', 'click');
+  })
 
+  $('a').on('click', function() {
+    var link = $(this).attr('href')
+    ga('send', 'event', link, 'click');
+   })
  
  //hide drop ins
   $('.animated .icon').hide()
