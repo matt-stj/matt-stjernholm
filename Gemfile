@@ -12,7 +12,7 @@ gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
 end
 
 group :development do
